@@ -1,11 +1,11 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = ["the", "our"];
+let adj = ["great", "big"];
+let noun = ["jogger", "racoon"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+pronoun.forEach(articulo => {
+  adj.forEach(adj => {
+    noun.forEach(suj => {
+      console.log(articulo + adj + suj + ".com");
+    });
+  });
+});
